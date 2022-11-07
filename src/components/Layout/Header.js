@@ -10,7 +10,8 @@ export default function Header(props) {
     <>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton />
+        {/* passing the function received to the children component */}
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
         <img src={mealsImg} alt="5 different dishes on a table" />
