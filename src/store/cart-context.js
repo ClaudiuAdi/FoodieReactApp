@@ -1,7 +1,7 @@
 import React from "react";
 
-// context data that will not be used(it will be used for autocompletion)
-// blueprint for the context
+// data will not be used(it will be used for autocompletion)
+// blueprint for the context provider to use and to manage
 const CartContext = React.createContext({
   items: [],
   totalAmount: 0,
